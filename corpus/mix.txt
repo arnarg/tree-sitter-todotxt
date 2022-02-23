@@ -1,0 +1,43 @@
+============
+Mix of rules
+============
+
+(B) 2022-01-01 This task has all of it +project1 @home +project2 @phone due:2022-01-10
+
+---
+
+(source_file
+  (task
+    (priority)
+    (date)
+    (project)
+    (context)
+    (project)
+    (context)
+    (kv)))
+
+=======================
+Multiple tasks with mix
+=======================
+
+(A) This task is a very high priority +VeryImportantProject @Computer
+(C) 2022-01-01 This task isn't as important due:2022-04-02
+x 2022-01-10 2022-01-01 This task is already done pri:A
+This task doesn't have anything
+
+---
+
+(source_file
+  (task
+    (priority)
+    (project)
+    (context))
+  (task
+    (priority)
+    (date)
+    (kv))
+  (done_task
+    (date)
+    (date)
+    (kv))
+  (task))

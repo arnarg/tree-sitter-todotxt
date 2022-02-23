@@ -1,0 +1,98 @@
+=============
+With priority
+=============
+
+(A) This is a task
+
+---
+
+(source_file
+  (task
+    (priority)))
+
+=========
+With date
+=========
+
+2022-01-01 This is a task
+
+---
+
+(source_file
+  (task
+    (date)))
+
+======================
+With priority and date
+======================
+
+(A) 2022-01-01 This is a task
+
+---
+
+(source_file
+  (task
+    (priority)
+    (date)))
+
+=====================================
+With priority and date in wrong order
+=====================================
+
+2022-01-01 (A) This is a task
+
+---
+
+(source_file
+  (task
+    (date)))
+
+=========
+Done task
+=========
+
+x This task is done
+
+---
+
+(source_file
+  (done_task))
+
+
+====================
+Done task with dates
+====================
+
+x 2022-02-02 2022-01-01 This task was done on 2022-02-02 but created on 2022-01-01
+
+---
+
+(source_file
+  (done_task
+    (date)
+    (date)))
+
+=================================
+Done task with only creation date
+=================================
+
+x 2022-02-02 This task only has creation date
+
+---
+
+(source_file
+  (done_task
+    (date)))
+
+==========================
+Incorrectly formatted done
+==========================
+
+xDone task
+X done task
+
+---
+
+(source_file
+  (task)
+  (task))

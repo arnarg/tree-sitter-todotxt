@@ -1,0 +1,74 @@
+============
+With project
+============
+
+This task is in +project
+
+---
+
+(source_file
+  (task
+    (project)))
+
+======================
+With multiple projects
+======================
+
+This task is in +project1 and +project2
+
+---
+
+(source_file
+  (task
+    (project)
+    (project)))
+
+============
+With context
+============
+
+This task has @context
+
+---
+
+(source_file
+  (task
+    (context)))
+
+======================
+With multiple context
+======================
+
+This task has @context1 and @context2
+
+---
+
+(source_file
+  (task
+    (context)
+    (context)))
+
+=======================
+With key value metadata
+=======================
+
+This task has metadata due:2022-01-01
+
+---
+
+(source_file
+  (task
+    (kv)))
+
+=======================
+With multiple key value metadata
+=======================
+
+This task has metadata due:2022-01-01 pri:A
+
+---
+
+(source_file
+  (task
+    (kv)
+    (kv)))

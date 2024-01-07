@@ -34,9 +34,9 @@ module.exports = grammar({
 
 		date: ($) => /\d{4}-\d{2}-\d{2}/,
 
-		project: ($) => /\+\w+/,
+		project: ($) => /\+[^\s]+/,
 
-		context: ($) => /@\w+/,
+		context: ($) => /@[^\s]+/,
 
 		kv: ($) => /[^\s:]+:[^\s:]+/,
 

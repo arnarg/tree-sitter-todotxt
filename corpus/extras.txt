@@ -10,6 +10,18 @@ This task is in +project
   (task
     (project)))
 
+============
+With project that contains non-letter non-whitespace characters
+============
+
+This task is in +dashed-project
+
+---
+
+(source_file
+  (task
+    (project)))
+
 ======================
 With multiple projects
 ======================
@@ -28,6 +40,18 @@ With context
 ============
 
 This task has @context
+
+---
+
+(source_file
+  (task
+    (context)))
+
+============
+With context that contains non-letter non-whitespace characters
+============
+
+This task has @dashed-context
 
 ---
 

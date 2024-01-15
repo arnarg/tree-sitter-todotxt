@@ -131,11 +131,11 @@
     },
     "project": {
       "type": "PATTERN",
-      "value": "\\+\\w+"
+      "value": "\\+[^\\s]+"
     },
     "context": {
       "type": "PATTERN",
-      "value": "@\\w+"
+      "value": "@[^\\s]+"
     },
     "kv": {
       "type": "PATTERN",
